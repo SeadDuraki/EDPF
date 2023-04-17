@@ -1,28 +1,22 @@
-@import url("/fonts/Exensa-grotesk/stylesheet.css");
-
+@import url(/fonts/Exensa-grotesk/stylesheet.css);
 * {
   font-family: "Exensa Grotesk", sans-serif;
 }
-
-/* Base */
 body {
   line-height: 1.7;
-  color: #ffffff;
+  color: #fff;
   font-weight: 300;
   font-size: 1rem;
   background: #000;
 }
-
 ::-moz-selection {
   background: #000;
   color: #fff;
 }
-
 ::selection {
   background: #000;
   color: #fff;
 }
-
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -31,15 +25,12 @@ a {
 a:hover {
   text-decoration: none;
 }
-
 .text-black {
   color: #000 !important;
 }
-
 .bg-black {
   background: #000 !important;
 }
-
 .site-wrap:before {
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
@@ -55,7 +46,6 @@ a:hover {
   opacity: 0;
   visibility: hidden;
 }
-
 .offcanvas-menu .site-wrap {
   position: absolute;
   height: 100%;
@@ -67,7 +57,6 @@ a:hover {
   opacity: 1;
   visibility: visible;
 }
-
 .btn {
   border-radius: 0;
 }
@@ -86,15 +75,12 @@ a:hover {
   color: #000;
   background-color: #fff;
 }
-
 .line-height-1 {
   line-height: 1 !important;
 }
-
 .bg-black {
   background: #000;
 }
-
 .form-control {
   height: 43px;
   border-radius: 0;
@@ -113,22 +99,18 @@ a:hover {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-
 .form-group .btn {
   background-color: transparent;
   border: 2px solid #93d500;
   filter: brightness(85%);
 }
-
 .form-group .btn:hover {
   filter: brightness(100%);
 }
-
 .form-group .btn:active {
   background-color: #93d500;
   color: black !important;
 }
-
 .site-section {
   padding: 2.5em 0;
 }
@@ -140,7 +122,6 @@ a:hover {
 .site-section.site-section-sm {
   padding: 4em 0;
 }
-
 .site-section-heading {
   color: #fff;
   position: relative;
@@ -173,19 +154,15 @@ a:hover {
   height: 1px;
   background: #000;
 }
-
 .border-top {
   border-top: 1px solid #edf0f5 !important;
 }
-
 .text-white-opacity-05 {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .text-black-opacity-05 {
   color: rgba(0, 0, 0, 0.5);
 }
-
 .hover-bg-enlarge {
   overflow: hidden;
   position: relative;
@@ -215,49 +192,40 @@ a:hover {
     height: 300px !important;
   }
 }
-
 .bg-image {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 991.98px) {
   .img-md-fluid {
     max-width: 100%;
   }
 }
-
 @media (max-width: 991.98px) {
   .display-1,
   .display-3 {
     font-size: 3rem;
   }
 }
-
 .overlap-to-top {
   margin-top: -150px;
 }
-
-/* Navbar */
 .site-navbar {
   margin-bottom: -20px;
   z-index: 9;
   position: relative;
 }
-
 @media (max-width: 1279.999px) {
   .site-navbar {
     margin-bottom: 5px;
   }
 }
-
 .logo-img {
   margin-top: 5px;
   margin-left: 5px;
   width: 100px;
 }
-
 .site-navbar.transparent {
   background: transparent;
 }
@@ -303,14 +271,13 @@ a:hover {
 .site-navbar .site-navigation .site-menu > li > a:hover {
   color: #93d500;
 }
-
 .site-mobile-menu {
   width: 300px;
   position: fixed;
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #000000;
+  background: #000;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -340,7 +307,7 @@ a:hover {
   font-size: 30px;
   display: inline-block;
   padding-left: 10px;
-  padding-right: 0px;
+  padding-right: 0;
   line-height: 1;
   cursor: pointer;
   -webkit-transition: 0.3s all ease;
@@ -350,7 +317,6 @@ a:hover {
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
   color: rgb(255, 255, 255);
 }
-
 .site-mobile-menu .site-mobile-menu-body {
   overflow-y: scroll;
   overflow: hidden;
@@ -370,7 +336,7 @@ a:hover {
   padding: 10px 20px;
   display: block;
   position: relative;
-  color: #ffffff;
+  color: #fff;
 }
 .site-mobile-menu .site-nav-wrap a:hover {
   color: #93d500;
@@ -384,7 +350,7 @@ a:hover {
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 10px;
   z-index: 20;
   width: 36px;
@@ -393,7 +359,6 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-
 .site-mobile-menu .site-nav-wrap > li {
   display: block;
   position: relative;
@@ -439,9 +404,6 @@ a:hover {
 .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
   padding-left: 15px !important;
 }
-
-/* Gallery */
-
 .gallery {
   padding: 10px;
   max-width: 1100px;
@@ -452,26 +414,21 @@ a:hover {
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
 }
-
 .v-stretch {
   grid-row: span 2;
 }
-
 .h-stretch {
   grid-column: span 2;
 }
-
 .big-stretch {
   grid-row: span 2;
   grid-column: span 2;
 }
-
 .gallery div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 @media (max-width: 560px) {
   .v-stretch {
     grid-row: span 1;
@@ -484,21 +441,17 @@ a:hover {
     grid-row: span 1;
   }
 }
-
 .bg-light {
   background: #ccc;
 }
-
 .mejs__container {
   width: 100% !important;
 }
-
 @media (max-width: 991.98px) {
   .display-4 {
     font-size: 1.8rem;
   }
 }
-
 .image-wrap-2 {
   display: block;
   overflow: hidden;
@@ -506,7 +459,6 @@ a:hover {
   left: 0;
   margin-bottom: 30px;
 }
-
 .image-wrap-2:before {
   position: absolute;
   content: "";
@@ -520,22 +472,16 @@ a:hover {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-
 .image-wrap-2 img {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   filter: gray;
-  /* IE5+ */
   -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all 0.1s ease-in-out;
 }
-
 .image-wrap-2:hover img {
   filter: none;
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.01);
 }
-
 .image-wrap-2 .image-info {
   text-align: center;
   position: absolute;
@@ -546,20 +492,16 @@ a:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 .image-wrap-2 .image-info h2 {
   color: #fff;
 }
-
 .image-wrap-2:hover:before {
   background: rgba(0, 0, 0, 0.4);
   content: "";
 }
-
 .image-wrap-2 a {
   display: block;
 }
-
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background-image: none;
@@ -576,7 +518,6 @@ a:hover {
   font-size: 20px;
   color: #fff;
 }
-
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background-image: none;
@@ -592,12 +533,10 @@ a:hover {
   font-size: 20px;
   color: #fff;
 }
-
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #93d500;
 }
-
 #lightgallery .item {
   margin-bottom: 30px;
 }
@@ -607,7 +546,6 @@ a:hover {
 #lightgallery .item:hover img {
   -webkit-transform: scale(1.01);
 }
-
 img {
   -webkit-transition: all 0.1s ease-in-out;
 }

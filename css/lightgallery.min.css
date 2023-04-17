@@ -318,7 +318,7 @@ body:not(.lg-from-hash)
 }
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-  border-color: #1eff00;
+  border-color: #93d500;
 }
 .lg-outer .lg-thumb-item img {
   width: 100%;

@@ -117,7 +117,8 @@ a:hover {
 .form-group .btn {
   background-color: transparent;
   border: 2px solid #93d500;
-  filter: brightness(85%);
+  align-items: center;
+  text-align: center;
 }
 
 .form-group .btn:hover {
@@ -127,6 +128,10 @@ a:hover {
 .form-group .btn:active {
   background-color: #93d500;
   color: black !important;
+}
+
+.form-group .btn-text .btn:active {
+  margin-top: -2px;
 }
 
 .site-section {
@@ -426,18 +431,6 @@ a:hover {
   font-size: 16px;
   padding-left: 60px;
 }
-.site-mobile-menu .site-nav-wrap[data-class="social"] {
-  float: left;
-  width: 100%;
-  margin-top: 30px;
-  padding-bottom: 5em;
-}
-.site-mobile-menu .site-nav-wrap[data-class="social"] > li {
-  width: auto;
-}
-.site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
-  padding-left: 15px !important;
-}
 
 /* Gallery */
 
@@ -488,10 +481,6 @@ a:hover {
   background: #ccc;
 }
 
-.mejs__container {
-  width: 100% !important;
-}
-
 @media (max-width: 991.98px) {
   .display-4 {
     font-size: 1.8rem;
@@ -521,11 +510,8 @@ a:hover {
 }
 
 .image-wrap-2 img {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   filter: gray;
-  /* IE5+ */
   -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all 0.1s ease-in-out;
 }
 
@@ -546,7 +532,7 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-.image-wrap-2 .image-info h2 {
+.image-wrap-2 .image-info h4 {
   color: #fff;
 }
 
@@ -557,44 +543,6 @@ a:hover {
 
 .image-wrap-2 a {
   display: block;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  background-image: none;
-  left: 10px;
-  right: auto;
-  z-index: 9;
-}
-.swiper-button-prev:before,
-.swiper-container-rtl .swiper-button-next:before {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 8px;
-  content: "\e5c4";
-  font-family: "icomoon";
-  font-size: 20px;
-  color: #fff;
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  background-image: none;
-  right: 20px;
-  left: auto;
-}
-.swiper-button-next:before,
-.swiper-container-rtl .swiper-button-prev:before {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 8px;
-  content: "\e5c8";
-  font-family: "icomoon";
-  font-size: 20px;
-  color: #fff;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #93d500;
 }
 
 #lightgallery .item {

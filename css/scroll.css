@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #button:hover {
     cursor: pointer;
     background-color: #93d500;

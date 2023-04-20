@@ -26,12 +26,18 @@
 
 #button:hover {
   cursor: pointer;
-  background-color: #93d500;
-  color: black;
 }
-#button:active {
-  background-color: #77ad01;
-  color: black;
+
+@media (min-width: 768px) {
+  #button:hover {
+    cursor: pointer;
+    background-color: #93d500;
+    color: black;
+  }
+  #button:active {
+    background-color: #77ad01;
+    color: black;
+  }
 }
 #button.show {
   opacity: 1;

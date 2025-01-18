@@ -182,7 +182,7 @@ sup {
 }
 
 a {
-  color: #93d500;
+  color: #FF007F;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -2611,8 +2611,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #93d500;
-  border-color: #93d500;
+  background-color: #FF007F;
+  border-color: #FF007F;
 }
 .btn-primary:hover {
   color: #fff;

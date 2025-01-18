@@ -104,7 +104,7 @@ a:hover {
 }
 .form-control:active,
 .form-control:focus {
-  border-color: #93d500;
+  border-color: #FF007F;
   background: transparent;
 }
 .form-control:hover,
@@ -116,7 +116,7 @@ a:hover {
 
 .form-group .btn {
   background-color: transparent;
-  border: 2px solid #93d500;
+  border: 2px solid #FF007F;
   align-items: center;
   text-align: center;
 }
@@ -126,7 +126,7 @@ a:hover {
 }
 
 .form-group .btn:active {
-  background-color: #93d500;
+  background-color: #FF007F;
   color: black !important;
 }
 
@@ -285,7 +285,7 @@ a:hover {
   float: right;
 }
 .site-navbar .site-navigation .site-menu .active > a {
-  color: #93d500;
+  color: #FF007F;
 }
 .site-navbar .site-navigation .site-menu a {
   text-decoration: none !important;
@@ -301,11 +301,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #000000;
   font-size: 12px;
   text-decoration: none !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #93d500;
+  color: #FF007F;
+  text-shadow: none;
 }
 
 .site-mobile-menu {
@@ -315,6 +317,7 @@ a:hover {
   z-index: 2000;
   padding-top: 20px;
   background: #000000;
+  opacity: 0.75;
   height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
@@ -377,14 +380,14 @@ a:hover {
   color: #ffffff;
 }
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #93d500;
+  color: #FF007F;
 }
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
   display: block;
 }
 .site-mobile-menu .site-nav-wrap li.active > a {
-  color: #93d500;
+  color: #FF007F;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -436,7 +439,7 @@ a:hover {
 
 .gallery {
   padding: 10px;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-gap: 10px;

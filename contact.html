@@ -36,7 +36,7 @@
     }
 
     a {
-      color: #93d500;
+      color: #FF007F;
     }
 
     a:hover {
@@ -103,35 +103,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mb-5">
-            <form action="https://formsubmit.co/esadduraki@gmail.com" method="POST">
-              <input type="hidden" name="_captcha" value="false">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="682bbdb4-e703-425e-b328-38cd999df380">
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-white" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control" name="fname">
+                <div class="col-md-12">
+                  <label class="text-white" for="fname">Name</label>
+                  <input type="text" id="fname" class="form-control" name="fname" placeholder="Write your name here...">
                 </div>
-                <div class="col-md-6">
-                  <label class="text-white" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control" name="lname">
-                </div>
+
               </div>
 
               <div class="row form-group">
 
                 <div class="col-md-12">
                   <label class="text-white" for="email">Email</label>
-                  <input type="email" id="email" name="email" class="form-control">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Write your email here...">
                 </div>
               </div>
 
-              <div class="row form-group">
 
-                <div class="col-md-12">
-                  <label class="text-white" for="subject">Subject</label>
-                  <input type="subject" id="subject" name="subject" class="form-control">
-                </div>
-              </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
@@ -147,7 +138,6 @@
                     <div class="btn-text" style="margin-top:-2px;">Send Message</div>
                   </button>
                 </div>
-                <input type="hidden" name="_next" value="https://eskoduraki.com/">
               </div>
 
 

@@ -1,0 +1,85 @@
+/* Default state: Hide the background slideshow on desktop */
+.cbp-bislideshow {
+  display: none;
+}
+
+/* Desktop Styles */
+
+/* Center the interactive gallery content (image and links) */
+.content-container {
+  margin-top: 35vh;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Image preview section styling */
+.image-display {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-display img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.text-links {
+  width: 1px;
+}
+
+.text-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-links li {
+  padding: 10px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* --- For Mobile Screens  --- */
+
+@media screen and (max-width: 768px) {
+  .cbp-bislideshow {
+    display: block;
+    z-index: -1;
+  }
+
+  .image-display {
+    display: none;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0;
+    z-index: 101;
+    margin-top: 40vh;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .text-links {
+    width: 100px;
+  }
+
+  .text-links li a {
+    text-align: start;
+    display: block;
+    letter-spacing: 1px;
+  }
+}

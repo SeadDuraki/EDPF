@@ -1,0 +1,147 @@
+section {
+  margin: 20vh 20vw 0vh 20vw;
+}
+
+/* --- Name and Email input --- */
+
+.form-part1 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-part1 input {
+  margin-top: 25px;
+  width: 25vw;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+  background-color: black;
+}
+
+.form-part1 input::placeholder {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.form-part1 label {
+  margin-bottom: 10px;
+}
+
+/* --- Message Input ---*/
+
+.form-part2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-part2 input {
+  margin-top: 25px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+  background-color: black;
+}
+
+.form-part2 input::placeholder {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.form-part2 label {
+  margin-bottom: 10px;
+}
+
+/* --- Button --- */
+
+.button {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #999;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.invalid {
+            /* This is the class that turns the underline red for invalid fields */
+            border-bottom: 1px solid #ff4444 !important; 
+        }
+
+/* --- Contact & Socials --- */
+
+.contact-socials {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details,
+.social-links {
+  margin-top: 20px;
+}
+
+.contact-details p:hover{
+  cursor:default;
+}
+
+.contact-details p:hover,
+.social-links a:hover {
+  text-decoration: line-through;
+}
+
+.socials {
+  text-align: end;
+}
+
+.social-links li {
+  list-style-type: none;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+/* --- Mobile Version --- */
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 150px 50px;
+  }
+  .form-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-part1 input {
+    margin-top: 25px;
+    width: 100%;
+    height: 32px;
+  }
+
+  .form-part1 .name {
+    margin-bottom: 6vh;
+  }
+
+  .contact-socials {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials {
+    text-align: start;
+    margin-top: 6vh;
+  }
+}

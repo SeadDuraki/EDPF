@@ -1,0 +1,69 @@
+section {
+  margin: 16vh 22vw;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+/* --- Logos of Clients --- */
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.client-logos img {
+  width: 40%;
+}
+
+/* --- Events Info --- */
+
+.collaborations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.festival-details,
+.collab-details {
+  margin-top: 20px;
+}
+
+.festival-details p:hover,
+.collab-details p:hover {
+  text-decoration: line-through;
+}
+
+.collab p {
+  text-align: end;
+}
+
+/* --- For Mobile Screens  --- */
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 130px 50px;
+  }
+
+  .collaborations {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .client-logos img {
+      width: 70%;
+  }
+
+  .collab {
+    margin-top: 10vh;
+  }
+
+  .collab p {
+    text-align: start;
+  }
+}

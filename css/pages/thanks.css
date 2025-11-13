@@ -1,0 +1,28 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40vh 50px 0 50px;
+}
+
+a:hover{
+    text-decoration: line-through;
+}
+
+p{
+    width: 700px;
+    text-align: center;
+}
+
+p, a{
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    p{
+        width: 100%;
+    }
+
+}

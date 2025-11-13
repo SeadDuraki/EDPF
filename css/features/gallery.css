@@ -1,0 +1,177 @@
+/* =============================== */
+/* === GALLERY GRID STYLES === */
+/* =============================== */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 170px 50px 100px 50px;
+  z-index: 99;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.gallery-container img:hover {
+  opacity: 0.7;
+}
+
+/* =============================== */
+/* === LIGHTBOX OVERLAY & CONTENT === */
+/* =============================== */
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  touch-action: none;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 100vh;
+  z-index: 101;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* =============================== */
+/* === LIGHTBOX NAVIGATION (NEXT/PREV) === */
+/* =============================== */
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 101;
+}
+
+.lightbox-nav:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+#lightbox-prev {
+  left: 50px;
+}
+
+#lightbox-next {
+  right: 50px;
+}
+
+/* =============================== */
+/* === SWIPE INDICATOR & ANIMATION === */
+/* =============================== */
+
+.swipe-indicator {
+  position: absolute;
+  bottom: -5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20pt;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1001;
+
+  /* REMOVE: animation-name, animation-iteration-count, animation-duration, etc. */
+}
+
+/* ---------------------------------- */
+/* NEW: Define the animation on the class added by JavaScript */
+/* ---------------------------------- */
+
+.swipe-indicator.animate-once {
+  /* <-- MUST MATCH JS CLASS NAME */
+  animation-name: swipe-up-fade;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  /* Set this to 4s to match your JS clean-up timeout */
+  animation-timing-function: ease-in;
+  /* Remove animation-delay here; the delay is handled by JS setTimeout */
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for the upward animation */
+@keyframes swipe-up-fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -23vh);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -23vh);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -23vh);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -27vh);
+  }
+}
+
+/* =============================== */
+/* === GLOBAL & UTILITY STYLES === */
+/* =============================== */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* =============================== */
+/* === RESPONSIVE LAYOUTS === */
+/* =============================== */
+
+
+@media (min-width: 769px) {
+  .swipe-indicator {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .gallery-container {
+    margin: 150px 50px 100px 50px;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    z-index: 500;
+  }
+
+  .lightbox-nav {
+    display: none;
+  }
+}
